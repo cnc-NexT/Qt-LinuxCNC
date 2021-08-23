@@ -1,0 +1,39 @@
+**********  Using linuxcnc nml position logger  ****************************************************
+
+udos@llxcnc:~$cd /home/udos/nml-position-logger/	//to where the is
+		
+
+udos@llxcnc:~$ sudo find / -name linuxcnc.nml		//find the linuxcnc.nml file
+/usr/share/linuxcnc/linuxcnc.nml
+/usr/share/doc/linuxcnc/examples/sample-configs/common/linuxcnc.nml
+/home/udos/linuxcnc29-dev/configs/common/linuxcnc.nml
+/home/udos/linuxcnc-dev/configs/common/linuxcnc.nml
+/home/udos/.local/share/Trash/files/linuxcnc-master/configs/common/linuxcnc.nml
+/home/udos/linuxcnc29-dev2/configs/common/linuxcnc.nml
+
+udos@llxcnc:~/nml-position-logger$ ls 				//show files in logger dir
+a.out  logger_usage.txt  nml-position-logger.cc
+
+**********  linuxcnc must be running to start nml-position-logger !  *******************************
+
+udos@llxcnc:~/nml-position-logger$ ./a.out /usr/share/linuxcnc/linuxcnc.nml //start nml-position-logger
+
+PollNr:= [ 1] Pos-X:= [ 148] Pos-Y:= [ 80.1213] Pos-Z:= [ 98.4758] 
+PollNr:= [ 2] Pos-X:= [ 148] Pos-Y:= [ 83.2825] Pos-Z:= [ 98.8195] 
+PollNr:= [ 3] Pos-X:= [ 148] Pos-Y:= [ 86.0762] Pos-Z:= [ 97.3503] 
+PollNr:= [ 4] Pos-X:= [ 148] Pos-Y:= [ 88.4087] Pos-Z:= [ 97.4233] 
+PollNr:= [ 5] Pos-X:= [ 148] Pos-Y:= [ 91.5657] Pos-Z:= [ 97.3491] 
+PollNr:= [ 6] Pos-X:= [ 148] Pos-Y:= [ 94.2282] Pos-Z:= [ 95.5803] 
+PollNr:= [ 7] Pos-X:= [ 148] Pos-Y:= [ 95.9913] Pos-Z:= [ 92.8782] 
+PollNr:= [ 8] Pos-X:= [ 148] Pos-Y:= [ 96.3925] Pos-Z:= [ 89.728] 
+PollNr:= [ 9] Pos-X:= [ 148] Pos-Y:= [ 96.3937] Pos-Z:= [ 86.5064] 
+PollNr:= [ 10] Pos-X:= [ 148] Pos-Y:= [ 96.3949] Pos-Z:= [ 83.2847] 
+PollNr:= [ 11] Pos-X:= [ 148] Pos-Y:= [ 96.3961] Pos-Z:= [ 80.0308] 
+PollNr:= [ 12] Pos-X:= [ 148] Pos-Y:= [ 96.3973] Pos-Z:= [ 76.8092] 
+PollNr:= [ 13] Pos-X:= [ 148] Pos-Y:= [ 96.3985] Pos-Z:= [ 73.6197] 
+PollNr:= [ 14] Pos-X:= [ 148] Pos-Y:= [ 96.3997] Pos-Z:= [ 70.3658] 
+PollNr:= [ 15] Pos-X:= [ 148] Pos-Y:= [ 98.6532] Pos-Z:= [ 69.5] 
+PollNr:= [ 16] Pos-X:= [ 148] Pos-Y:= [ 101.875] Pos-Z:= [ 69.5] 
+
+
+End with shift+Strg+c
