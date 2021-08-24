@@ -219,7 +219,7 @@ MainWindow::MainWindow(QWidget *parent) :
 // ** LLSymbols END ********************************************************************************
 */
 //** CREATE RCS_STAT_CHANNEL *stat ****************************************************************
-    const char *nmlfile = "/usr/share/linuxcnc/linuxcnc.nml";
+    const char *nmlfile = "/opt/linuxcnc/configs/common/linuxcnc.nml";
     stat = new RCS_STAT_CHANNEL(emcFormat, "emcStatus", "xemc", nmlfile);
     txtwrite.append ("-- 8.) ************* RCS_STAT_CHANNEL *stat CREATED  \n");
     ui->tb_StartUpInfo->setText(txtwrite   +   "\n");

@@ -51,7 +51,13 @@ INCLUDEPATH += $$PWD/../../../../../../data/plc \
                /home/udos/linuxcnc-dev/src/hal \
                /home/udos/linuxcnc-dev/src/hal/utils
 
-LIBS += -Iinclude -Isrc/emc/rs274ngc -Llib -lnml -llinuxcnc  -llinuxcnchal -llinuxcncini -DULAPI -lposemath
+# Added by skynet
+INCLUDEPATH +=  /opt/linuxcnc/src/hal/utils \
+                /opt/linuxcnc/include \
+                /opt/linuxcnc/src/libnml/cms \
+                /usr/include/tirpc
+
+LIBS += -L/opt/linuxcnc/lib -lnml -llinuxcnchal -llinuxcnc -llinuxcncini -DULAPI -lposemath -lrs274 -lcanterp -ltooldata -lcanterp  -ltirpc
 LIBS += -lGLU -lGL
 
 DEPENDPATH  += $$PWD/../../../../../../data/plc
