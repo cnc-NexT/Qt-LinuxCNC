@@ -1,0 +1,146 @@
+QMainWindow{
+            color:#000000;
+            Background-color:#a1a1a1; /*Change the background color*/
+            Border-style:inset;/*Change the border style*/
+            padding-left:4px;
+            padding-top:4px;
+            }
+
+
+QLabel{
+    color:#000000;
+    Background-color:lightyellow; /*Change the background color*/
+    Border-style:inset;/*Change the border style*/
+    padding-left:4px;
+    padding-top:4px;
+    }
+
+QTextEdit {
+    color:#000000;
+    border: 2px solid gray;
+    border-radius: 10px;
+    padding: 0 8px;
+    background: lightyellow;
+    }
+
+QPushButton#pushButton {
+    background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+                                      stop:0 #616161, stop: 0.5 #505050,
+                                      stop: 0.6 #434343, stop:1 #656565);
+    color: white;
+    padding-left: 4px;
+    border: 1px solid #6c6c6c;
+}
+
+QPushButton#pushButton_2 {
+    background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+                                      stop:0 #a1a1a1, stop: 0.5 #808080,
+                                      stop: 0.6 #434343, stop:1 #656565);
+    color: white;
+    padding-left: 4px;
+    border: 1px solid #6c6c6c;
+}
+
+
+#menu_frame_left QPushButton {
+    background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+                stop:   0   #e1e1e1,
+                stop:   0.5 #808080,
+                stop:   0.6 #656565,
+                stop:   1   #a5a5a5);
+    color: white;
+    padding-left: 4px;
+    border: 1px solid #6c6c6c;
+}
+
+#menu_frame_left QPushButton:pressed {
+    background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+                stop:   0   #a1a1a1,
+                stop:   0.5 #404040,
+                stop:   0.6 #434343,
+                stop:   1   #656565);
+    color: white;
+    padding-left: 4px;
+    border: 2px solid #4c4c4c;
+}
+
+#menu_frame_bottom QPushButton {
+    background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+                stop:   0   #e1e1e1,
+                stop:   0.5 #808080,
+                stop:   0.6 #656565,
+                stop:   1   #a5a5a5);
+    color: white;
+    padding-left: 4px;
+    border: 1px solid #6c6c6c;
+}
+
+#menu_frame_bottom QPushButton:pressed {
+    background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+                stop:   0   #a1a1a1,
+                stop:   0.5 #404040,
+                stop:   0.6 #434343,
+                stop:   1   #656565);
+    color: white;
+    padding-left: 4px;
+    border: 2px solid #4c4c4c;
+}
+
+#menu_frame_right QPushButton {
+    background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+                stop:   0   #e1e1e1,
+                stop:   0.5 #808080,
+                stop:   0.6 #656565,
+                stop:   1   #a5a5a5);
+    color: white;
+    padding-left: 4px;
+    border: 1px solid #6c6c6c;
+}
+
+#menu_frame_right QPushButton:pressed {
+    background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+                stop:   0   #a1a1a1,
+                stop:   0.5 #404040,
+                stop:   0.6 #434343,
+                stop:   1   #656565);
+    color: white;
+    padding-left: 4px;
+    border: 2px solid #4c4c4c;
+}
+
+#menu_frame_left QLabel {
+    background-color: lightgrey;
+}
+
+#menu_frame_bottom QLabel {
+    background-color: lightgrey;
+}
+
+QTabWidget::pane {
+            background-color: lightgrey;
+            border: 2px solid white;
+}
+
+#TabWidgetFrame {
+            background-color: #a1a1a1;
+            border: 1px solid lightgrey;
+}
+
+#tw_LLX_Symbols {
+            color:#000000;
+            background: lightyellow; /*Change the background color*/
+            alternate-background-color: lightgrey;
+            Border-style:plain;/*Change the border style*/
+            border-radius: 1px;
+            padding-left:1px;
+            padding-top:1px;
+}
+
+QTextBrowser #tb_StartUpInfo {
+    color:#000000;
+    Background:lightyellow; /*Change the background color*/
+    Border-style:plain;/*Change the border style*/
+    border-radius: 1px;
+    padding-left:4px;
+    padding-top:4px;
+    }
